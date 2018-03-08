@@ -1,0 +1,36 @@
+@import "../vars.less";
+
+.wizard {
+    .steps-summary {
+        margin: 2rem 0;
+
+
+        .card {
+            text-align: center;
+            padding: 2rem 0;
+
+            .stepNumber {
+                font-size: 2rem;
+                display: block;
+            }
+
+            .stepDesc {
+                display: block;
+            }
+
+            &.done {
+                background-color: @theme-color;
+            }
+
+            &.selected {
+                background-color: @theme-color;
+                color: @colorOnThemeColor;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .action-bar{
+        text-align:center;
+    }
+}

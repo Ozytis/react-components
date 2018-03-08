@@ -1,0 +1,1 @@
+exports.Ozytis = require("./dist/index");

@@ -1,0 +1,19 @@
+@import "../vars.less";
+.breadcrumb {
+    background-color: @grey;
+    color: #fff;
+
+    .breadcrumb-item {
+        & + .breadcrumb-item::before {
+            color: #fff;
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+
+    i {
+        margin-right: 1rem;
+    }
+}

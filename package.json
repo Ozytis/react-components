@@ -1,0 +1,36 @@
+{
+  "name": "ozytis-react-components",
+  "version": "0.0.4",
+  "description": "Composants react courants",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublish": "cpx \"src/**/*.{html,png,jpg,less}\" dist | npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ozytis/react-components.git"
+  },
+  "keywords": [
+    "ozytis",
+    "react"
+  ],
+  "author": "G. Larreur de Farcy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ozytis/react-components/issues"
+  },
+  "homepage": "https://github.com/Ozytis/react-components#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.40",
+    "@types/react-router-dom": "^4.2.4",
+    "cpx": "^1.5.0",
+    "typescript": "^2.7.2"
+  },
+  "types": "./dist/index.d.ts"
+}
