@@ -1,17 +1,17 @@
 import "./wizard.less";
 import * as React from "react";
-import { Loader, Button, BaseComponent } from "..";
+import { Loader, Button, BaseComponent } from "../index";
 
 
-export module Ozytis.Wizard{
+export module Ozytis.Wizard {
 
     export interface WizardProps {
         onFinalValidation?: () => Promise<any>;
         displayProgressBar?: boolean;
         finalValidationText?: string;
-        nextStepText?:string;
-        previousStepText?:string;
-        doneText?:string;
+        nextStepText?: string;
+        previousStepText?: string;
+        doneText?: string;
     }
 
     export class WizardState {
@@ -142,14 +142,14 @@ export class Wizard extends BaseComponent<Ozytis.Wizard.WizardProps, Ozytis.Wiza
                         this.state.currentStep > 0 &&
                         <Button modifier="light" className={`mr-2`} onClick={() => this.previousStep()} >
                             <i className="far fa-chevron-left mr-2" />
-                            { this.props.previousStepText ||"Précédent" }
+                            {this.props.previousStepText || "Précédent"}
                         </Button>
                     }
 
                     {
                         this.state.currentStep < this.state.totalSteps - 1 &&
                         <Button modifier="light" className="ml-2" onClick={() => this.nextStep()}>
-                            {this.props.nextStepText || "Suivant" }
+                            {this.props.nextStepText || "Suivant"}
                             <i className="far fa-chevron-right ml-2" />
                         </Button>
                     }

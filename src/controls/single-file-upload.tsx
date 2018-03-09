@@ -1,9 +1,9 @@
 import "./controls.less";
 import * as React from "react";
 
-import {BaseComponent} from "..";
+import { BaseComponent } from "../base-component/base-component";
 
-export module Ozytis.SingleFileUploadControl{
+export module Ozytis.SingleFileUploadControl {
 
     export interface SingleFileUploadControlProps {
         label: string;
@@ -11,7 +11,7 @@ export module Ozytis.SingleFileUploadControl{
         className?: string;
         inputStyle?: React.CSSProperties;
         value: string;
-        showPreview? :boolean;
+        showPreview?: boolean;
     }
 
     export class SingleFileUploadControlState {
@@ -46,7 +46,7 @@ export class SingleFileUploadControl extends BaseComponent<Ozytis.SingleFileUplo
         });
     }
 
-    control:HTMLInputElement;
+    control: HTMLInputElement;
 
     render() {
 
@@ -56,7 +56,7 @@ export class SingleFileUploadControl extends BaseComponent<Ozytis.SingleFileUplo
             <div className={"form-group " + this.props.className}>
                 <label className="control-label">{this.props.label}</label>
                 <div className="controls">
-                    <input type="file" ref={input=>this.control=input} onChange={(e) => this.onChange(e.target.files)} />
+                    <input type="file" ref={input => this.control = input} onChange={(e) => this.onChange(e.target.files)} />
                     {
                         this.state.loading &&
                         <i className="fa fa-refresh fa-spin" />

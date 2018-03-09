@@ -1,12 +1,12 @@
 {
   "name": "ozytis-react-components",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Composants react courants",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "prepublish": "cpx \"src/**/*.{html,png,jpg,less}\" dist | npm run build"
+    "prepare": "cpx \"src/**/*.{html,png,jpg,less}\" dist | npm run build"
   },
   "repository": {
     "type": "git",

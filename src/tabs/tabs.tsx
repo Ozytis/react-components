@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { BaseComponent } from "..";
+import { BaseComponent } from "../base-component/base-component";
 
 export module Ozytis.Tabs{
 

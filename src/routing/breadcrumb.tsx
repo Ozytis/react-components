@@ -3,7 +3,7 @@ import * as React from "react";
 
 import { Link } from "react-router-dom";
 import { BaseRouteConfig } from "./base-route-config";
-import { BaseComponent } from "..";
+import { BaseComponent } from "../base-component/base-component";
 
 export module Ozytis.BreadCrumbs{
     export interface BreadCrumbProps {

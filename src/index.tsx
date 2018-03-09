@@ -1,5 +1,5 @@
-export { Modal } from "./modal";
-export * from "./base-component";
+export { Modal } from "./modal/modal";
+export * from "./base-component/base-component";
 export { Button } from "./button/button";
 export { Panel } from "./panel/panel";
 export { PanelGroup } from "./panel/panel-group";
@@ -12,3 +12,4 @@ export { Wizard, WizardStep } from "./wizard/wizard";
 export { TextAreaControl } from "./controls/text-area-control";
 export { TextControl } from "./controls/text-control";
 export { SingleFileUploadControl } from "./controls/single-file-upload";
+export { MoreActionsMenu, MoreActionsMenuItem } from "./more-actions-menu/more-action-menu";

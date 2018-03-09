@@ -1,9 +1,9 @@
 import * as React from "react";
-import { BaseComponent } from "../base-component";
+import { BaseComponent } from "../base-component/base-component";
 import { CSSProperties } from "react";
 import { BootstrapModifier } from "../modifiers";
 
-export module Ozytis.Panel{
+export module Ozytis.Panel {
 
     export interface PanelProps {
         renderHeader?: () => JSX.Element;
