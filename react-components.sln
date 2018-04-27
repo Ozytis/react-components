@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "react-components(1)", ".", "{61AE7CE4-9459-4DA0-AC8E-6696A1B4336B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_64876"
+		Debug.AspNetCompiler.PhysicalPath = "E:\projets\ozytis\react-components\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64876\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_64876"
+		Release.AspNetCompiler.PhysicalPath = "E:\projets\ozytis\react-components\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64876\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "64876"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61AE7CE4-9459-4DA0-AC8E-6696A1B4336B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61AE7CE4-9459-4DA0-AC8E-6696A1B4336B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F390D6BC-5D3A-466F-96E0-981062C99B1F}
+	EndGlobalSection
+EndGlobal

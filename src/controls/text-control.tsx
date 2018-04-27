@@ -10,7 +10,7 @@ export module Ozytis.TextControl{
         onChange: React.ChangeEventHandler<HTMLInputElement>;
         cols?: number;
         placeHolder?: string;
-        type?: "text" | "date" | "email" | "number" | "url";
+        type?: "text" | "date" | "email" | "number" | "url" | "password";
         required?: boolean;
         min?: number;
         max?: number;
