@@ -15,7 +15,7 @@ export class ErrorSummary extends BaseComponent<{ errors: string[], globalText?:
 
         return (
             <div className="validation-summary-errors alert alert-danger rounded-0" role="alert">
-                {this.props.globalText || "Veuillez corriger les erreurs suivantes :"} :
+                {this.props.globalText || "Veuillez corriger les erreurs suivantes :"}
                     <ul>
                     {
                         this.props.errors.map && this.props.errors.map((error, index) => (
