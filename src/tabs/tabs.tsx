@@ -59,7 +59,7 @@ export class Tabs extends BaseComponent<Ozytis.Tabs.TabsProps, Ozytis.Tabs.TabsS
             <div className={`tabbable ${this.props.orientation}-tabs ${this.props.className ? this.props.className : ""}`}>
                 <ul className="nav nav-tabs nav-fill tab-padding tab-space-3 tab-blue">
                     {
-                        React.Children.map(this.props.children, (c: React.ReactElement<Ozytis.Tabs.TabPaneProps>, index) => {
+                        React.Children.toArray(this.props.children).filter(c=>c && (c as any).props).map((c: React.ReactElement<Ozytis.Tabs.TabPaneProps>, index) => {
                             return (
                                 <li role="presentation" className="nav-item" onClick={(e) => this.changeTab(index)}>
                                     <a className={`nav-link  ${this.state.currentTab === index ? "active" : ""}`} role="tab">{c.props.title}</a>
@@ -70,7 +70,7 @@ export class Tabs extends BaseComponent<Ozytis.Tabs.TabsProps, Ozytis.Tabs.TabsS
                 </ul>
                 <div className="tab-content">
                     {
-                        React.Children.map(this.props.children, (child: React.ReactElement<Ozytis.Tabs.TabPaneProps>, index: number) => {
+                        React.Children.toArray(this.props.children).filter(c=>c && (c as any).props).map((child: React.ReactElement<Ozytis.Tabs.TabPaneProps>, index: number) => {
 
                             var show = this.state.currentTab === index;
 
