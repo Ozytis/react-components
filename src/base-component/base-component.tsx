@@ -10,12 +10,17 @@ export class BaseComponent<P, S> extends React.Component<P, S> {
         this.loadInitialState(state);
     }
 
-    setState<K extends keyof S>(
-        newState: ((prevState: Readonly<S>, props: P) => (Pick<S, K> | S)) | (Pick<S, K> | S)
-    ) {
-        return new Promise<void>(resolve => {
-            super.setState(newState, () => { resolve(); });
-        });
+	setState<K extends keyof S>(newState: ((prevState: Readonly<S>, props: P) => (Pick<S, K> | S)) | (Pick<S, K> | S)): Promise<void>;
+	setState<K extends keyof S>(newState: ((prevState: Readonly<S>, props: P) => (Pick<S, K> | S)) | (Pick<S, K> | S), callback: () => void): void;
+    setState<K extends keyof S>(newState: ((prevState: Readonly<S>, props: P) => (Pick<S, K> | S)) | (Pick<S, K> | S), callback?: () => void) {
+		if(callback) {
+			super.setState(newState, callback);
+		}
+		else {
+			return new Promise<void>(resolve => {
+				super.setState(newState, () => { resolve(); });
+			});
+		}
     }
 
 
