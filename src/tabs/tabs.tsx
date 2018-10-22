@@ -61,7 +61,7 @@ export class Tabs extends BaseComponent<Ozytis.Tabs.TabsProps, Ozytis.Tabs.TabsS
                     {
                         React.Children.toArray(this.props.children).filter(c=>c && (c as any).props).map((c: React.ReactElement<Ozytis.Tabs.TabPaneProps>, index) => {
                             return (
-                                <li role="presentation" className="nav-item" onClick={(e) => this.changeTab(index)}>
+                                <li role="presentation" className="nav-item" onClick={(e) => this.changeTab(index)} key={`tab-anchor-${index}`}>
                                     <a className={`nav-link  ${this.state.currentTab === index ? "active" : ""}`} role="tab">{c.props.title}</a>
                                 </li>
                             )
